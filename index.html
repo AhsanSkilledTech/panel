@@ -1,0 +1,493 @@
+<!doctype html>
+<html dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<!-- Favicons -->
+		<link href="assets/images/favicone.png" rel="icon">
+		<!-- font aweasome -->
+		<link rel="stylesheet" href="https://kit.fontawesome.com/d3eb7bac5e.css" crossorigin="anonymous">
+		<!-- bootstrap 5.2.2 -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<!-- form select -->
+	    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<!-- fonts -->
+		<link href="dist/fonts/fonts.css" rel="stylesheet">
+		<!-- Main Stylesheet File -->
+		<link href="assets/css/aside.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="assets/css/media_queries.css" rel="stylesheet">
+	</head>
+<body>
+<div class="app">
+	<div class="dashboard-wrapper flex">
+		<aside class="aside">
+			<a href="/" class="aside__logo">
+				<img src="assets/images/logo.svg" alt="" class="aside__img">
+			</a>
+			<!-- <div class="asidebtn">
+				<div class="asidebtn-block">
+					<i class="fas fa-plus-square"></i>
+					<p class="asidebtn__text">Content</p>
+				</div>
+				<div class="asideContent">
+					<button type="button" class="asideClose">
+						<i class="fa-sharp fa-regular fa-xmark"></i>
+					</button>
+					<div class="asideContent__header">
+						<h6 class="asideContent__header-h6">SUBPAGE CONTENTS</h6>
+						<h6 class="asideContent__header-h3">Add New Content</h6>
+					</div>
+					<div class="flex asideContent__side">
+						<div class="asideContent__side1">
+							<ul class="asideContent__side1-list">
+								<li class="asideContent__side1-list-item flex-i gap-2 active">
+									<input type="checkbox" class="page__checkbox">
+									<p class="asideContent__side1-list-item-p">Home</p>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<p class="asideContent__side1-list-item-p">About us</p>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<p class="asideContent__side1-list-item-p">Team</p>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<p class="asideContent__side1-list-item-p">Contact us</p>
+								</li>
+							</ul>
+						</div>
+						<div class="asideContent__side2">
+							<ul class="orPagList"  role="tablist">
+								<li class="orPagList__item" role="presentation">
+									<div class="orPagList__btn active" data-bs-toggle="pill" data-bs-target="#header-tab" type="button" role="tab" aria-selected="true">
+										Header
+									</div>
+								</li>
+								<li class="orPagList__item" role="presentation">
+									<div class="orPagList__btn" data-bs-toggle="pill" data-bs-target="#banner-tab" type="button" role="tab" aria-selected="false">
+										Banner
+									</div>
+								</li>
+								<li class="orPagList__item" role="presentation">
+									<div class="orPagList__btn" data-bs-toggle="pill" data-bs-target="#team-tab" type="button" role="tab" aria-selected="false">
+										Footer	
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="asideContent__side3">
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="header-tab" role="tabpanel" tabindex="0">
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Header1</h3>
+										<img src="assets/images/header1.png" alt="" class="asideContent__side3-box-img">
+									</div>
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Header2</h3>
+										<img src="assets/images/header2.png" alt="" class="asideContent__side3-box-img">
+									</div>
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Header3</h3>
+										<img src="assets/images/header3.png" alt="" class="asideContent__side3-box-img">
+									</div>
+								</div>
+
+								<div class="tab-pane fade" id="banner-tab" role="tabpanel" tabindex="0">..2.</div>
+
+								<div class="tab-pane fade" id="team-tab" role="tabpanel" tabindex="0">
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Footer1</h3>
+										<img src="assets/images/foooter1.png" alt="" class="asideContent__side3-box-img">
+									</div>
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Footer2</h3>
+										<img src="assets/images/foooter2.png" alt="" class="asideContent__side3-box-img">
+									</div>
+									<div class="asideContent__side3-box">
+										<input type="checkbox" class="page__checkbox2">
+										<h3 class="asideContent__side3-box-h3">Footer3</h3>
+										<img src="assets/images/foooter3.png" alt="" class="asideContent__side3-box-img">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="asidebtn">
+				<div class="asidebtn-block">
+					<i class="fa-duotone fa-gears"></i>
+					<p class="asidebtn__text">Site Settings</p>
+				</div>
+				<form class="asideContent">
+					<button type="button" class="asideClose">
+						<i class="fa-sharp fa-regular fa-xmark"></i>
+					</button>
+					<div class="asideContent__header">
+						<h6 class="asideContent__header-h6">WESITE SETTINGS</h6>
+						<h6 class="asideContent__header-h3">WESITE SETTINGS</h6>
+					</div>
+					<div class="flex asideContent__side">
+						<!-- aside content box1	start -->
+						<div class="asideContent__side1">
+							<h5 class="asideContent__side1-heading">Theme Main Color</h5>
+							<div class="block">
+								<label for="" class="blockH">Select Theme Main Color</label>
+								<input type="color" class="" id="main-heading-color">
+							</div>
+							<h5 class="asideContent__side1-heading">Headings</h5>
+							<div class="block">
+								<label for="" class="blockH">Main Headings Color</label>
+								<input type="color" class="" id="main-heading-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Sub Headings Color</label>
+								<input type="color" class="" id="sub-heading-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Paragraphs Color </label>
+								<input type="color" class="" id="paragraph-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Links Color </label>
+								<input type="color" class="" id="links-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Icons Color </label>
+								<input type="color" class="" id="icons-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Form input Color </label>
+								<input type="color" class="" id="form-input-color">
+							</div>
+						
+						</div>
+						<div class="asideContent__side2">
+							<h5 class="asideContent__side1-heading">Backgrounds Color</h5>
+							<div class="block">
+								<label for="" class="blockH">Main background Color</label>
+								<input type="color" class="" id="main-background-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Sub background Color</label>
+								<input type="color" class="" id="sub-background-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Background Color3</label>
+								<input type="color" class="" id="background-color3">
+							</div>
+
+							<h5 class="asideContent__side1-heading">Button  Backgrounds</h5>
+							<div class="block">
+								<label for="" class="blockH">Button1 background</label>
+								<input type="color" class="" id="button1-background-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Button2 background</label>
+								<input type="color" class="" id="button2-background-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Button3 background</label>
+								<input type="color" class="" id="button3-background-color">
+							</div>
+						</div>
+						<!-- aside content 2 end -->
+						<div class="asideContent__side2">
+							<h5 class="asideContent__side1-heading">Borders Color</h5>
+							<div class="block">
+								<label for="" class="blockH">Border1 Color </label>
+								<input type="color" class="" id="border1-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Border2 Color </label>
+								<input type="color" class="" id="border2-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Border3 Color </label>
+								<input type="color" class="" id="border3-color">
+							</div>
+							<div class="block">
+								<label for="" class="blockH">Border4 Color </label>
+								<input type="color" class="" id="border4-color">
+							</div>
+						</div>
+						<div class="asideContent__side2">
+							<h5 class="asideContent__side1-heading">Font Family</h5>
+							<div class="block">
+								<label for="" class="blockH">Main background Color</label>
+								<select name="" id="" class="form-control form select selectbox">
+									<option value="" selected disabled>Select A Font Family 1</option>
+									<option value="">Font Family 1</option>
+									<option value="">Font Family 2</option>
+									<option value="">Font Family 2</option>
+								</select>
+							</div>
+						</div>
+						<button class="form-btn flex-a">Save</button>
+					</div>
+				</form>
+			</div>
+			<div class="asidebtn">
+				<div class="asidebtn-block">
+					<i class="fas fa-plus-square"></i>
+					<p class="asidebtn__text">Content</p>
+				</div>
+				<form class="asideContent">
+					<button type="button" class="asideClose">
+						<i class="fa-sharp fa-regular fa-xmark"></i>
+					</button>
+					<div class="asideContent__header">
+						<h6 class="asideContent__header-h6">SUBPAGE CONTENTS</h6>
+						<h6 class="asideContent__header-h3">Add New Content</h6>
+					</div>
+					<div class="flex asideContent__side">
+						<!-- aside content box1	start -->
+						<div class="asideContent__side1">
+							<h5 class="asideContent__side1-heading">Pages</h5>
+							<ul class="asideContent__side1-list">
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<a href="#home_page" class="asideContent__side1-list-item-p">Home</a>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<a href="#aboutus_page" class="asideContent__side1-list-item-p">About us</a>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<a href="#team_page" class="asideContent__side1-list-item-p">Team</a>
+								</li>
+								<li class="asideContent__side1-list-item flex-i gap-2">
+									<input type="checkbox" class="page__checkbox">
+									<a href="#contactus_page" class="asideContent__side1-list-item-p">Contact us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="asideContent__side2">
+							<h5 class="asideContent__side1-heading">Pages sections</h5>
+							<ul class="orPagList" id="home_page">
+								<li class="orPagList__item">
+									<a href="#header" class="orPagList__btn">
+										Header
+									</a>
+								</li>
+								<li class="orPagList__item">
+									<a href="#banner" class="orPagList__btn">
+										Banner
+									</a>
+								</li>
+								<li class="orPagList__item">
+									<a href="#footer" class="orPagList__btn">
+										Footer	
+									</a>
+								</li>
+							</ul>
+							<ul class="orPagList" id="aboutus_page">
+								<li class="orPagList__item">
+									<a href="#banner" class="orPagList__btn">
+										Banner
+									</a>
+								</li>
+								<li class="orPagList__item">
+									<a href="#aboutus" class="orPagList__btn">
+										About us
+									</a>
+								</li>
+							</ul>
+							<ul class="orPagList" id="team_page">
+								<li class="orPagList__item">
+									<a href="#banner" class="orPagList__btn">
+										Banner
+									</a>
+								</li>
+								<li class="orPagList__item">
+									<a href="#team" class="orPagList__btn">
+										Team
+									</a>
+								</li>
+							</ul>
+							<ul class="orPagList" id="contactus_page">
+								<li class="orPagList__item">
+									<a href="#banner" class="orPagList__btn">
+										Banner
+									</a>
+								</li>
+								<li class="orPagList__item">
+									<a href="#contactus" class="orPagList__btn">
+										Contact us
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- aside content 2 end -->
+						<div class="asideContent__side3">
+							<div class="sections-content" id="header">
+								<div class="asideContent__side3-box">
+									<input type="radio" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Header1</h3>
+									<img src="assets/images/header1.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="radio" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Header2</h3>
+									<img src="assets/images/header2.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="radio" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Header3</h3>
+									<img src="assets/images/header3.png" alt="" class="asideContent__side3-box-img">
+								</div>
+							</div>
+							<div class="sections-content" id="banner">
+								<div class="asideContent__side3-box">
+									<input type="checkbox" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Banner1</h3>
+									<img src="assets/images/banner1.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="checkbox" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Banner2</h3>
+									<img src="assets/images/banner2.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="checkbox" name="header" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Banner3</h3>
+									<img src="assets/images/banner3.png" alt="" class="asideContent__side3-box-img">
+								</div>
+							</div>
+							<div class="sections-content" id="aboutus">About us</div>
+							<div class="sections-content" id="team">Team</div>
+							<div class="sections-content" id="contactus">Contact us</div>
+
+							<div class="sections-content" id="footer">
+								<div class="asideContent__side3-box">
+									<input type="radio" name="footer" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Footer1</h3>
+									<img src="assets/images/foooter1.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="radio" name="footer" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Footer2</h3>
+									<img src="assets/images/foooter2.png" alt="" class="asideContent__side3-box-img">
+								</div>
+								<div class="asideContent__side3-box">
+									<input type="radio" name="footer" class="page__checkbox2">
+									<h3 class="asideContent__side3-box-h3">Footer3</h3>
+									<img src="assets/images/foooter3.png" alt="" class="asideContent__side3-box-img">
+								</div>
+							</div>
+						</div>
+						<!-- asideContent__side3 end -->
+						<button class="form-btn flex-a">Save</button>
+					</div>
+				</form>
+			</div>
+		</aside>
+		<main class="main">
+			
+		</main>
+	</div>
+</div>
+<div class="modal fade" id="delmdl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content delmdl">
+			<div class="delmdlbody">
+				<div class="delmdlhdr flex-a">
+					<div class="delmdlhdr-box">
+						<i class="fa-solid fa-trash-can-check"></i>
+					</div>
+				</div>
+				<p class="delmdlhdr-p">Are Sure You Want To  <br>
+					Delete This ID # <span class="yellow">1</span> </p>
+			</div>
+			<div class="delmdlftr flex-i justify-content-center gap-3">
+				<button type="button" data-bs-dismiss="modal" class="delmdlftr-btn delmdlftr-btn1">Cencel</button>
+				<button type="submit" class="delmdlftr-btn delmdlftr-btn2">Yes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/create-file-list"></script>
+<script>
+function dataFileDnD() {
+    return {
+        files: [],
+        fileDragging: null,
+        fileDropping: null,
+        humanFileSize(size) {
+            const i = Math.floor(Math.log(size) / Math.log(1024));
+            return (
+                (size / Math.pow(1024, i)).toFixed(2) * 1 +
+                " " +
+                ["B", "kB", "MB", "GB", "TB"][i]
+            );
+        },
+        remove(index) {
+            let files = [...this.files];
+            files.splice(index, 1);
+
+            this.files = createFileList(files);
+        },
+        drop(e) {
+            let removed, add;
+            let files = [...this.files];
+
+            removed = files.splice(this.fileDragging, 1);
+            files.splice(this.fileDropping, 0, ...removed);
+
+            this.files = createFileList(files);
+
+            this.fileDropping = null;
+            this.fileDragging = null;
+        },
+        dragenter(e) {
+            let targetElem = e.target.closest("[draggable]");
+
+            this.fileDropping = targetElem.getAttribute("data-index");
+        },
+        dragstart(e) {
+            this.fileDragging = e.target
+                .closest("[draggable]")
+                .getAttribute("data-index");
+            e.dataTransfer.effectAllowed = "move";
+        },
+        loadFile(file) {
+            const preview = document.querySelectorAll(".preview");
+            const blobUrl = URL.createObjectURL(file);
+
+            preview.forEach(elem => {
+                elem.onload = () => {
+                    URL.revokeObjectURL(elem.src); // free memory
+                };
+            });
+
+            return blobUrl;
+        },
+        addFiles(e) {
+            const files = createFileList([...this.files], [...e.target.files]);
+            this.files = files;
+            this.form.formData.files = [...files];
+        }
+    };
+}
+</script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
