@@ -132,9 +132,6 @@
         width: 154px;
         height: 68px;
     }
-    .aside{
-        display: none;
-    }
     .main.active,
     .dashboard_header.active,
     .dashboard_header,
