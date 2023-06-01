@@ -330,7 +330,9 @@ input{
 	left: 20px;
 	border-radius: 8px;
 }
-.block{
+.block-f{
+	display: flex;
+	flex-direction: column;
 	text-align: start;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
